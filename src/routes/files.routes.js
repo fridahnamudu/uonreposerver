@@ -1,5 +1,5 @@
-import express from "express";
-import FileService from "../services/files.service";
+const express = require("express");
+const FileService = require("../services/files.service");
 
 const FileRoutes = express.Router();
 
@@ -9,4 +9,4 @@ FileRoutes.post("/upload", FileService.uploadFile);
 FileRoutes.delete("/delete/:fileId", FileService.deleteFile);
 FileRoutes.put("/update/:fileId", FileService.updateFile);
 
-export default FileRoutes;
+module.exports = FileRoutes;

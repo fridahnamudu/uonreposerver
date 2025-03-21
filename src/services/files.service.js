@@ -1,4 +1,4 @@
-import { axiosInstance } from "./axiosInstance"; // Import your axios instance
+const {axiosInstance} = require("./axiosInstance");
 
 class FileService {
     // Fetch files
@@ -71,4 +71,4 @@ class FileService {
     }
 }
 
-export default FileService;
+module.exports = FileService;

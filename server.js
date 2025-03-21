@@ -1,9 +1,9 @@
-import express from "express";
-import FileRoutes from "./src/routes/files.routes";
-import cors from "cors";
-import morgan from "morgan";
+const express = require('express');
+const FileRoutes = require('./src/routes/files.routes');
+const cors = require('cors');
+const morgan = require('morgan');
 
-const PORT = 5000;
+const PORT = 9000;
 const app = express();
 
 app.use(cors());
